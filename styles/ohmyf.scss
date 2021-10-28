@@ -1,0 +1,294 @@
+body{
+    padding: 0px;
+    border: #FF79DA solid 1px;
+}
+// @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap');
+// header{
+//     border: #2fbdff solid 1px;
+//     background-color: rgb(247, 167, 207);
+//     height: 350px;
+// }
+#enseigne{
+//   border: green solid 1px;
+  height: 50px;
+}
+#enseigne img{
+    width: 40%;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    margin-left: 32%;
+    
+}
+#lieu{
+    height: 45px;
+    background: linear-gradient(to bottom,rgb(229, 226, 226), rgb(240, 240, 240));
+    border-top: solid rgb(212, 212, 212);
+    // background-color: rgb(240, 240, 240);
+    padding-top: 2.5px;
+    padding-left: 60px;
+}
+// #lieu p{
+//     margin-top: 20px;
+//     margin-left: 126px;
+// }
+#paris{
+    margin-left: 13px;
+    font-family:'Roboto', Arial, Helvetica, sans-serif;
+}
+header h2{
+    font-family:'Roboto', Arial, Helvetica, sans-serif;
+    // font-style: normal;
+    font-weight: bolder;
+    width: 70%;
+    margin-left: 22%;
+}
+.marg1{
+    position: relative;
+    left: 35px;
+}
+header p{
+    width: 80%;
+    margin-left: 17%;
+    font-family:'Roboto', Arial, Helvetica, sans-serif;
+}
+#resv{
+    background-color: rgb(247, 247, 247);
+    padding-top: 15px;
+}
+#resv h2{
+    font-family:'Roboto', Arial, Helvetica, sans-serif;
+    // font-style: normal;
+    font-weight: bolder;
+    width:70%;
+}
+#resv p{
+    font-family:'Roboto', Arial, Helvetica, sans-serif;
+}
+#sele{
+    margin-left: 15%;
+}
+#explo{
+    height: 45px;
+    width: 50%;
+    margin-left:25%;
+    // margin-left: 22%;
+    margin-bottom: 15%;
+    background: linear-gradient(to top, #9356DC,#FF79DA);
+    color: white;
+    // border-color: #9356DC;
+    border:rgb(248, 248, 248);
+    border-radius: 30px;
+    font-family:'Roboto', Arial, Helvetica, sans-serif;
+}
+#part01{
+    // color: yellowgreen solid 1px;
+    // background-color: lightcyan;
+    height: 290px;
+    padding-top: 20px;
+}
+#part01 h2{
+    font-family:'Roboto', Arial, Helvetica, sans-serif;
+    // font-style: normal;
+    font-weight: bolder;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+#choix{
+    // border: tomato solid 3px;
+    // padding: 8px;
+    height: 200px;
+}  
+.mon_choix{
+    width: 90%;
+    height: 30%;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    border:rgb(247, 247, 247);
+    filter:drop-shadow(3px 3px 2px rgb(240, 240, 240));
+    border-radius: 18px;
+    font-family:'Roboto', Arial, Helvetica, sans-serif;
+}
+.mon_choix > div{
+    width: 24px;
+    height: 21px;
+    display: inline-block;
+    // padding-left: 5px;
+    // padding-right: 5px;
+    padding-top: 4px;
+    // padding-bottom: 1px;
+    border-radius: 50%;
+    background-color:#9356DC;
+    color: white;
+    // position: relative;
+    // right: 60px;
+}
+#ch1{
+    position: relative;
+    right: 82px;
+    bottom: 4px;
+}
+#ch2{    position: relative;
+    right: 88px;
+    bottom: 5px;
+}
+#ch3{    position: relative;
+    right: 93px;
+    bottom: 2px;
+}
+#phone{
+    position: relative;
+    right: 60px;
+    top: 5px;
+}
+#liste{
+    position: relative;
+    right: 67px;
+    top: 5px;
+}
+#resto{
+    position: relative;
+    right: 65px;
+    top: 5px;
+}
+#txtb1{
+    // margin-left: 2%;
+    position: relative;
+    right: 20px;
+    font-weight: bolder;
+}
+#txtb2{
+    // margin-left: 2%;
+    position: relative;
+    right: 26px;
+    font-weight: bolder;
+}
+#txtb3{
+    // margin-left: 2%;
+    position: relative;
+    right: 20px;
+    font-weight: bolder;
+}
+#part02{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #f7f7f7;
+    // border: rgb(90, 4, 170) solid 1px;
+}
+#part02 h2{
+    font-family:'Roboto', Arial, Helvetica, sans-serif;
+    // font-style: normal;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+#palette, #francaise, #delice, #enchante{
+    height: 220px;
+    margin-bottom: 30px;
+    // border: rgb(90, 4, 170)solid 2px;
+}
+.imres{
+	height: 75%;
+}	
+.legend01{
+	height: 25%;
+	background-color: white;
+	padding-top: 10px;
+	padding-left: 10px;
+	margin-right:0px;
+    border-bottom-left-radius: 13px;
+	border-bottom-right-radius: 13px;
+}
+.imres img{
+	width:99%;
+	height: 100%;
+	border: #fdfffa solid 2px;
+	object-fit: cover;
+	border-top-left-radius: 13px;
+	border-top-right-radius: 13px;
+    position: relative;
+}
+
+.legend01 a{
+	color: black;
+	font-family:'Roboto', Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+.legend01 >i:hover{
+    background-color: violet;
+}
+ 
+.sans_trait{
+	color: black;
+	text-decoration: none;
+}
+.grastxt{
+    font-weight: bolder;
+}
+#fav01{
+    position: relative;
+    left:55%;
+    bottom: 20px;
+}
+#fav01:hover{
+    border:none;
+    background:linear-gradient(to bottom, #9356DC,#FF79DA); 
+}
+#fav02{
+    position: relative;
+    left:65%;
+    bottom: 20px;
+}
+#fav03{
+    position: relative;
+    left:65%;
+    bottom: 20px;
+}
+#fav04{
+    position: relative;
+    left:55%;
+    bottom: 20px;
+}
+/*Animation des Coeurs =====================*/
+.favoris{
+    // border-style: solid;
+    // border-width: 1px;
+    // display: block;
+    // width: 100px;
+    // height: 100px;
+    background-color: #f8f8fc;
+    transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+.box:hover {
+    background-color: #FFCCCC;
+    width: 200px;
+    height: 200px;
+    transform: rotate(180deg);
+}
+/*==========================================*/
+footer{
+    background-color: rgb(48, 46, 46);
+    color: white;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 40px;
+}
+footer h3{
+    font-family:'Shrikhand', cursive;
+    // font-weight: bold;
+    // font-style: italic;
+}
+footer div{
+    font-family: 'roboto', Arial, Helvetica, sans-serif;
+}
+#propo{
+    position: relative;
+    left: 10px;
+}
+#parte{
+    position: relative;
+    left: 15px;
+}
