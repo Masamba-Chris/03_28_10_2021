@@ -90,18 +90,24 @@ header p {
 }
 
 #choix {
+  border: tomato solid 3px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   height: 200px;
 }
 
 .mon_choix {
   width: 90%;
-  height: 30%;
+  height: 22%;
   margin-bottom: 15px;
   margin-left: 15px;
   border: #f7f7f7;
   filter: drop-shadow(3px 3px 2px #f0f0f0);
   border-radius: 18px;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
+  position: relative;
 }
 
 .mon_choix > div {
@@ -115,56 +121,58 @@ header p {
 }
 
 #ch1 {
-  position: relative;
-  right: 82px;
-  bottom: 4px;
+  position: absolute;
+  right: 317px;
+  bottom: 8px;
 }
 
 #ch2 {
-  position: relative;
-  right: 88px;
-  bottom: 5px;
+  position: absolute;
+  right: 317px;
+  bottom: 8px;
 }
 
 #ch3 {
-  position: relative;
-  right: 93px;
-  bottom: 2px;
+  position: absolute;
+  right: 317px;
+  bottom: 8px;
 }
 
 #phone {
-  position: relative;
-  right: 60px;
-  top: 5px;
+  position: absolute;
+  left: 33px;
+  top: 11px;
 }
 
 #liste {
-  position: relative;
-  right: 67px;
-  top: 5px;
+  position: absolute;
+  left: 31px;
+  top: 11px;
 }
 
 #resto {
-  position: relative;
-  right: 65px;
-  bottom: 5px;
+  position: absolute;
+  left: 36px;
+  bottom: 14px;
 }
 
 #txtb1 {
-  position: relative;
+  position: aboslute;
   right: 20px;
   font-weight: bolder;
 }
 
 #txtb2 {
-  position: relative;
-  right: 26px;
+  position: absolute;
+  left: 91px;
+  bottom: 14px;
   font-weight: bolder;
 }
 
 #txtb3 {
-  position: relative;
-  right: 20px;
+  position: absolute;
+  left: 92px;
+  bottom: 14px;
   font-weight: bolder;
 }
 
@@ -212,14 +220,14 @@ header p {
   position: relative;
 }
 
+.legend01 {
+  position: relative;
+}
+
 .legend01 a {
   color: black;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   text-decoration: none;
-}
-
-.legend01 > i:hover {
-  background-color: violet;
 }
 
 .sans_trait {
@@ -231,46 +239,124 @@ header p {
   font-weight: bolder;
 }
 
-#fav01 {
+.legend01 {
   position: relative;
-  left: 55%;
-  bottom: 20px;
 }
 
-#fav01:hover {
-  border: none;
-  background: linear-gradient(to bottom, #9356DC, #FF79DA);
+#coeur {
+  height: 400px;
+  margin-top: 20px;
+  border: solid red 1px;
 }
 
-#fav02 {
+.cr01, .cr02, .cr03, .cr04, .cr05 {
+  border: solid blue 1px;
+  margin: 5px;
+}
+
+/*====================================*/
+.chgcolor01 {
+  width: 26px;
+  height: 24px;
   position: relative;
-  left: 65%;
-  bottom: 20px;
+  left: 270px;
+  bottom: 49px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-#fav03 {
+.chgcolor01:hover .plein04, .chgcolor02:hover .plein04, .chgcolor03:hover .plein04, .chgcolor04:hover .plein04 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+}
+.chgcolor01:hover .plein10, .chgcolor02:hover .plein10, .chgcolor03:hover .plein10, .chgcolor04:hover .plein10 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 2;
+}
+
+.chgcolor02 {
+  width: 26px;
+  height: 24px;
   position: relative;
-  left: 65%;
-  bottom: 20px;
+  left: 273px;
+  bottom: 49px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-#fav04 {
+.chgcolor03 {
+  width: 26px;
+  height: 24px;
   position: relative;
-  left: 55%;
-  bottom: 20px;
+  left: 271px;
+  bottom: 49px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-/*Animation des Coeurs =====================*/
-.favoris {
-  background-color: #f8f8fc;
-  transition: width 2s, height 2s, background-color 2s, transform 2s;
+.chgcolor04 {
+  width: 26px;
+  height: 24px;
+  position: relative;
+  left: 269px;
+  bottom: 49px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-.box:hover {
-  background-color: #FFCCCC;
-  width: 200px;
-  height: 200px;
-  transform: rotate(180deg);
+.coeurBL {
+  font-size: 160%;
+  color: #0c0c0c;
+  background-color: white;
+}
+
+.coeurVL {
+  font-size: 160%;
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.zetindex {
+  width: 26px;
+  height: 24px;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  border: #e14156 solid 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.zetindex:hover .plein04 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+}
+.zetindex:hover .plein10 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 2;
+}
+
+.plein04 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 2;
+}
+
+.plein10 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
 }
 
 /*==========================================*/

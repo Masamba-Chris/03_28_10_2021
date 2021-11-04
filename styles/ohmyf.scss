@@ -97,19 +97,23 @@ header p{
     margin-left: 15px;
 }
 #choix{
-    // border: tomato solid 3px;
-    // padding: 8px;
+    border: tomato solid 3px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     height: 200px;
 }  
 .mon_choix{
     width: 90%;
-    height: 30%;
+    height: 22%;
     margin-bottom: 15px;
     margin-left: 15px;
     border:rgb(247, 247, 247);
     filter:drop-shadow(3px 3px 2px rgb(240, 240, 240));
     border-radius: 18px;
     font-family:'Roboto', Arial, Helvetica, sans-serif;
+    position: relative;
 }
 .mon_choix > div{
     width: 24px;
@@ -126,49 +130,54 @@ header p{
     // right: 60px;
 }
 #ch1{
-    position: relative;
-    right: 82px;
-    bottom: 4px;
+    position: absolute;
+    right: 317px;
+    bottom: 8px;
 }
-#ch2{    position: relative;
-    right: 88px;
-    bottom: 5px;
+#ch2{    
+    position: absolute;
+    right: 317px;
+    bottom: 8px;
 }
-#ch3{    position: relative;
-    right: 93px;
-    bottom: 2px;
+#ch3{    
+    position: absolute;
+    right: 317px;
+    bottom: 8px;
 }
 #phone{
-    position: relative;
-    right: 60px;
-    top: 5px;
+    position: absolute;
+    left: 33px;
+    top: 11px;
 }
 #liste{
-    position: relative;
-    right: 67px;
-    top: 5px;
+    position: absolute;
+    left: 31px;
+    top: 11px;
 }
 #resto{
-    position: relative;
-    right: 65px;
-    bottom: 5px;
+    position: absolute;
+    left: 36px;
+    bottom: 14px;
 }
 #txtb1{
     // margin-left: 2%;
-    position: relative;
+    position: aboslute;
     right: 20px;
     font-weight: bolder;
 }
 #txtb2{
     // margin-left: 2%;
-    position: relative;
-    right: 26px;
+    position: absolute;
+    left: 91px;
+    bottom: 14px;
+    
     font-weight: bolder;
 }
 #txtb3{
     // margin-left: 2%;
-    position: relative;
-    right: 20px;
+    position: absolute;
+    left: 92px;
+    bottom: 14px;
     font-weight: bolder;
 }
 #part02{
@@ -211,14 +220,14 @@ header p{
 	border-top-right-radius: 13px;
     position: relative;
 }
+.legend01{
+    position: relative;
+}
 
 .legend01 a{
 	color: black;
 	font-family:'Roboto', Arial, Helvetica, sans-serif;
     text-decoration: none;
-}
-.legend01 >i:hover{
-    background-color: violet;
 }
  
 .sans_trait{
@@ -228,47 +237,144 @@ header p{
 .grastxt{
     font-weight: bolder;
 }
-#fav01{
+
+.legend01{
     position: relative;
-    left:55%;
-    bottom: 20px;
-}
-#fav01:hover{
-    border:none;
-    background:linear-gradient(to bottom, #9356DC,#FF79DA); 
-}
-#fav02{
-    position: relative;
-    left:65%;
-    bottom: 20px;
-}
-#fav03{
-    position: relative;
-    left:65%;
-    bottom: 20px;
-}
-#fav04{
-    position: relative;
-    left:55%;
-    bottom: 20px;
-}
-/*Animation des Coeurs =====================*/
-.favoris{
-    // border-style: solid;
-    // border-width: 1px;
-    // display: block;
-    // width: 100px;
-    // height: 100px;
-    background-color: #f8f8fc;
-    transition: width 2s, height 2s, background-color 2s, transform 2s;
 }
 
-.box:hover {
-    background-color: #FFCCCC;
-    width: 200px;
-    height: 200px;
-    transform: rotate(180deg);
+#coeur{
+    height: 400px;
+    margin-top: 20px;
+    border: solid red 1px;
+  }
+  .cr01, .cr02, .cr03, .cr04, .cr05{
+    border: solid blue 1px; 
+    margin: 5px;
+  }
+/*====================================*/
+
+.chgcolor01{
+    width: 26px;
+    height: 24px;
+    position: relative;
+    left: 270px;
+    bottom: 49px;
+    // border: rgb(225, 65, 86) solid 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
+.chgcolor01:hover, .chgcolor02:hover, .chgcolor03:hover, .chgcolor04:hover{
+    .plein04{
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        z-index: 1;
+    }
+    .plein10{
+          position: absolute;
+          left: 0px;
+          top: 0px;
+          z-index: 2;
+    }
+  }
+
+
+.chgcolor02{
+    width: 26px;
+    height: 24px;
+    position: relative;
+    left: 273px;
+    bottom: 49px;
+    // border: rgb(225, 65, 86) solid 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.chgcolor03{
+    width: 26px;
+    height: 24px;
+    position: relative;
+    left: 271px;
+    bottom: 49px;
+    // border: rgb(225, 65, 86) solid 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.chgcolor04{
+    width: 26px;
+    height: 24px;
+    position: relative;
+    left: 269px;
+    bottom: 49px;
+    // border: rgb(225, 65, 86) solid 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.coeurBL{
+    font-size: 160%;
+    color:rgb(12, 12, 12);
+    background-color: white;
+    // background: -webkit-linear-gradient(#eee, #eee);
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
+
+    // border: black solid 2px;
+}
+.coeurVL{
+    font-size: 160%;
+    // color:rgb(112, 10, 228);
+    background: -webkit-linear-gradient(#9356DC, #FF79DA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+  .zetindex{
+      width: 26px;
+      height: 24px;
+      position: relative;
+      left: 0px;
+      top:0px;
+      border: rgb(225, 65, 86) solid 1px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+  }
+  .zetindex:hover{
+    .plein04{
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        z-index: 1;
+    }
+    .plein10{
+          position: absolute;
+          left: 0px;
+          top: 0px;
+          z-index: 2;
+    }
+  }
+  .plein04{
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      z-index: 2;
+  }
+  .plein10{
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        z-index: 1;
+  }
+
+
+//   #coeur i{
+//   font-size: 72px;
+//   color: red;
+//   background: -webkit-linear-gradient(#9356DC, #FF79DA);
+//   -webkit-background-clip: text;
+//   -webkit-text-fill-color: transparent;
+// }
+
+
+
 /*==========================================*/
 footer{
     background-color: rgb(48, 46, 46);
@@ -279,8 +385,6 @@ footer{
 }
 footer h3{
     font-family:'Shrikhand', cursive;
-    // font-weight: bold;
-    // font-style: italic;
 }
 footer div{
     font-family: 'roboto', Arial, Helvetica, sans-serif;
