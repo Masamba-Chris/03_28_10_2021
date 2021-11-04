@@ -243,17 +243,6 @@ header p {
   position: relative;
 }
 
-#coeur {
-  height: 400px;
-  margin-top: 20px;
-  border: solid red 1px;
-}
-
-.cr01, .cr02, .cr03, .cr04, .cr05 {
-  border: solid blue 1px;
-  margin: 5px;
-}
-
 /*====================================*/
 .chgcolor01 {
   width: 26px;
@@ -384,4 +373,10 @@ footer div {
 #parte {
   position: relative;
   left: 15px;
+}
+
+#retour {
+  font-size: larger;
+  font-weight: bolder;
+  color: black;
 }/*# sourceMappingURL=ohmyf.css.map */

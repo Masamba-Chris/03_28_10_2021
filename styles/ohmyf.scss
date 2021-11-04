@@ -242,15 +242,15 @@ header p{
     position: relative;
 }
 
-#coeur{
-    height: 400px;
-    margin-top: 20px;
-    border: solid red 1px;
-  }
-  .cr01, .cr02, .cr03, .cr04, .cr05{
-    border: solid blue 1px; 
-    margin: 5px;
-  }
+// #coeur{
+//     height: 400px;
+//     margin-top: 20px;
+//     border: solid red 1px;
+//   }
+//   .cr01, .cr02, .cr03, .cr04, .cr05{
+//     border: solid blue 1px; 
+//     margin: 5px;
+//   }
 /*====================================*/
 
 .chgcolor01{
@@ -364,17 +364,6 @@ header p{
         z-index: 1;
   }
 
-
-//   #coeur i{
-//   font-size: 72px;
-//   color: red;
-//   background: -webkit-linear-gradient(#9356DC, #FF79DA);
-//   -webkit-background-clip: text;
-//   -webkit-text-fill-color: transparent;
-// }
-
-
-
 /*==========================================*/
 footer{
     background-color: rgb(48, 46, 46);
@@ -396,4 +385,12 @@ footer div{
 #parte{
     position: relative;
     left: 15px;
+}
+//----------------Palette du goût---------------
+#retour{
+    // width: 100px;
+    // height: 10px;
+    font-size: larger;
+    font-weight: bolder;
+    color: black;
 }
