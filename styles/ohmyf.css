@@ -1,13 +1,48 @@
 body {
   padding: 0px;
   border: #FF79DA solid 1px;
+  position: relative;
 }
 
-#enseigne {
+.chargeur {
+  border: 10px solid #f3f3f3;
+  width: 100px;
+  height: 100px;
+  border-top: solid green 10px;
+  border-bottom: solid lightcoral 10px;
+  border-radius: 50%;
+  margin: auto;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  -webkit-animation: spin 300s linear infinite;
+  animation: spin 300s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.enseigne {
   height: 50px;
 }
 
-#enseigne img {
+.enseigne img {
   width: 40%;
   margin-top: 20px;
   margin-bottom: 25px;
@@ -68,7 +103,8 @@ header p {
   height: 45px;
   width: 50%;
   margin-left: 25%;
-  margin-bottom: 15%;
+  margin-bottom: 30px;
+  margin-top: 30px;
   background: linear-gradient(to top, #9356DC, #FF79DA);
   color: white;
   border: #f8f8f8;
@@ -375,8 +411,136 @@ footer div {
   left: 15px;
 }
 
-#retour {
-  font-size: larger;
+.enseigne01 {
+  height: 50px;
+  display: flex;
+}
+
+.enseigne01 img {
+  width: 40%;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  margin-left: 32%;
+  border: solid blue 1px;
+}
+
+.fa-solid {
+  font-size: 100px;
   font-weight: bolder;
   color: black;
+}
+
+.pal01 {
+  padding: 10px;
+}
+
+.imres img {
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: red solid 3px;
+  border-radius: 0px;
+}
+
+.details {
+  background-color: #eeeded;
+  border: blue solid 3px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  position: relative;
+  top: -50px;
+  margin-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 0px;
+}
+
+.ti_pal {
+  border: blue solid 2px;
+}
+
+.ti01_pal {
+  border: blue solid 2px;
+  height: 60px;
+}
+
+.rp01 {
+  background-color: #f7f7f7;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-top: 10px;
+  font-family: "roboto", Arial, Helvetica, sans-serif;
+  position: relative;
+}
+
+#paletteDG {
+  font-family: "Shrikhand", cursive;
+}
+
+.ti01 {
+  font-family: "roboto", Arial, Helvetica, sans-serif;
+  margin-bottom: 5px;
+}
+
+.ti_pal div {
+  border: #99E2D0 solid 2px;
+  width: 11%;
+  margin-top: 1px;
+}
+
+.repasNomA {
+  font-weight: bold;
+  border: solid blue 1px;
+}
+
+.repasNomB {
+  font-size: small;
+  border: solid cyan 1px;
+  width: 85%;
+}
+
+.repasPrix {
+  font-size: small;
+  border: solid green 1px;
+  width: 15%;
+}
+
+.repaschoix {
+  width: 15%;
+  border: solid darkmagenta 1px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  height: 100%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #99E2D0;
+}
+
+.rp02 {
+  display: flex;
+}
+
+.nomPrix {
+  width: 100%;
+  border: solid hotpink 1px;
+}
+
+.repaschoix input {
+  width: 15px;
+  height: 15px;
+  border-radius: 50px;
+  margin-left: 17px;
+  margin-top: 15px;
+}
+
+.pal01 {
+  margin-bottom: 0px;
+}
+
+.suites {
+  margin-top: -64px;
+  padding-bottom: 40px;
 }/*# sourceMappingURL=ohmyf.css.map */
