@@ -342,7 +342,6 @@ header p {
 .coeurVL {
   font-size: 160%;
   background: -webkit-linear-gradient(#9356DC, #FF79DA);
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -482,10 +481,7 @@ footer div {
 
 .rp01 {
   background-color: #f7f7f7;
-  border-bottom-left-radius: 10px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-radius: 10px;
   margin-top: 10px;
   font-family: "roboto", Arial, Helvetica, sans-serif;
   position: relative;
@@ -506,48 +502,40 @@ footer div {
   margin-top: 1px;
 }
 
-.repasNomA {
+.rp01 {
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  margin-top: 10px;
+  font-family: "roboto", Arial, Helvetica, sans-serif;
+  position: relative;
+}
+.rp01 .nomPrix {
+  width: 100%;
+  border: solid hotpink 1px;
+}
+.rp01 .nomPrix .repasNomA {
   width: 100%;
   font-weight: bold;
-  border: solid blue 1px;
+  border: solid red 1px;
 }
-
-.repasNomB {
+.rp01 .nomPrix .rp02 {
+  display: flex;
+  width: 100%;
+}
+.rp01 .nomPrix .rp02 .repasNomB {
   font-size: small;
   border: solid cyan 1px;
   width: 85%;
 }
-
-.repasPrix {
+.rp01 .nomPrix .rp02 .repasPrix {
   font-size: small;
   border: solid green 1px;
   width: 15%;
 }
 
 .repaschoix {
-  width: 15%;
-  border: solid darkmagenta 1px;
-  position: absolute;
-  right: 0px;
-  top: 0px;
-  height: 100%;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  background-color: #99E2D0;
-  visibility: hidden;
+  display: none;
 }
-
-.rp02 {
-  display: flex;
-  width: 100%;
-}
-
-.nomPrix {
-  width: 100%;
-  border: solid hotpink 1px;
-  z-index: 2;
-}
-
 .repaschoix i {
   font-size: 20px;
   background-color: #99E2D0;
@@ -555,6 +543,27 @@ footer div {
   position: absolute;
   left: 15px;
   top: 10px;
+}
+
+.nomPrix:active {
+  background-color: tomato;
+}
+.nomPrix:active .repasNomA {
+  width: 84%;
+}
+.nomPrix:active .rp02 {
+  width: 85%;
+}
+.nomPrix:active .repaschoix {
+  width: 15%;
+  border: solid rgba(128, 206, 3, 0) 3px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  height: 100%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #99E2D0;
 }
 
 .pal01 {
@@ -569,14 +578,4 @@ footer div {
 .AdrEmail {
   color: white;
   text-decoration: none;
-}
-
-.entre01:hover .repasNomA {
-  width: 84%;
-}
-.entre01:hover .rp02 {
-  width: 85%;
-}
-.entre01:hover .repaschoix {
-  visibility: visible;
 }/*# sourceMappingURL=ohmyf.css.map */

@@ -353,7 +353,7 @@ header p{
     font-size: 160%;
     // color:rgb(112, 10, 228);
     background: -webkit-linear-gradient(#9356DC, #FF79DA);
-    -webkit-background-clip: text;
+    // -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -481,13 +481,12 @@ footer div{
     height: 60px;
 }
 .rp01{
-    // display: flex;
     background-color: #f7f7f7;
-    // border-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-radius: 10px;
+    // border-bottom-left-radius: 10px;
+    // border-top-left-radius: 10px;
+    // border-top-right-radius: 10px;
+    // border-bottom-right-radius: 10px;
     margin-top: 10px;
     font-family: 'roboto', Arial, Helvetica, sans-serif;
     position: relative;
@@ -504,51 +503,111 @@ footer div{
     width: 11%;
     margin-top: 1px;
 }
-.repasNomA{
-    width: 100%;
-   font-weight: bold; 
-   border: solid blue 1px;
-}
-.repasNomB{
-    font-size:small;
-    border: solid cyan 1px;
-    width: 85%;
-}
-.repasPrix{
-    font-size: small;
-    border:solid green 1px;
-    width: 15%;
-}
+// .repasNomA{
+//     width: 100%;
+//    font-weight: bold; 
+//    border: solid blue 1px;
+// }
+// .repasNomB{
+//     font-size:small;
+//     border: solid cyan 1px;
+//     width: 85%;
+// }
+// .repasPrix{
+//     font-size: small;
+//     border:solid green 1px;
+//     width: 15%;
+// }
+// .repaschoix{
+//     width: 15%;
+//     border: solid darkmagenta 1px;
+//     position: absolute;
+//     right: 0px;
+//     top: 0px;
+//     height: 100%;
+//     border-top-right-radius:10px;
+//     border-bottom-right-radius: 10px;
+//     background-color: #99E2D0;
+//     visibility: hidden;
+// }
+// .rp02{
+//     display: flex;
+//     width: 100%;
+// }
+.rp01{
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-family: 'roboto', Arial, Helvetica, sans-serif;
+    position: relative;
+
+    & .nomPrix{
+        width: 100%;
+        border: solid hotpink 1px;
+        & .repasNomA{
+            width: 100%;
+        font-weight: bold; 
+        border: solid rgb(255, 0, 0) 1px;
+        }
+        & .rp02{
+            display: flex;
+            width: 100%;
+            & .repasNomB{
+                font-size:small;
+                border: solid cyan 1px;
+                width: 85%;
+            }
+            & .repasPrix{
+                font-size: small;
+                border:solid green 1px;
+                width: 15%;
+            }
+
+        }
+    }
+}    
 .repaschoix{
-    width: 15%;
-    border: solid darkmagenta 1px;
-    position: absolute;
-    right: 0px;
-    top: 0px;
-    height: 100%;
-    border-top-right-radius:10px;
-    border-bottom-right-radius: 10px;
-    background-color: #99E2D0;
-    visibility: hidden;
-}
-.rp02{
-    display: flex;
-    width: 100%;
-}
-.nomPrix{
-    // width: 85%;
-    width: 100%;
-    border: solid hotpink 1px;
-    z-index: 2;
-}
-.repaschoix i{
-    font-size: 20px;
-    background-color: #99E2D0;
-    color: #f7f7f7;
-    position: absolute;
-    left: 15px;
-    top: 10px;
-}
+        // width: 15%;
+        // border: solid rgb(128, 206, 3, 0) 3px;
+        // position: absolute;
+        // right: 0px;
+        // top: 0px;
+        // height: 100%;
+        // border-top-right-radius:10px;
+        // border-bottom-right-radius: 10px;
+        // background-color: #99E2D0;
+             display: none;
+   
+        & i{
+            font-size: 20px;
+            background-color: #99E2D0;
+            color: #f7f7f7;
+            position: absolute;
+            left: 15px;
+            top: 10px;
+        }
+} 
+.nomPrix:active{
+        background-color: tomato ;
+        .repasNomA{
+            width: 84%;
+              }
+        .rp02{
+            width: 85%;
+        }
+        .repaschoix{
+            width: 15%;
+            border: solid rgb(128, 206, 3, 0) 3px;
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            height: 100%;
+            border-top-right-radius:10px;
+            border-bottom-right-radius: 10px;
+            background-color: #99E2D0;
+     
+        }
+    }
 .pal01{
     margin-bottom: 0px;
 }
@@ -559,16 +618,4 @@ footer div{
 .AdrEmail{
     color: white;
     text-decoration: none;
-}
-.entre01:hover{
-    .repasNomA{
-        width: 84%;
-    }
-    .rp02{
-        width: 85%;
-
-    }
-    .repaschoix{
-        visibility: visible;
-    }
 }
