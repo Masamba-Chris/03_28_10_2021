@@ -3,7 +3,49 @@ body{
     padding: 0px;
     border: #FF79DA solid 1px;
     position: relative;
+    
+    .chargeur{
+        border: 10px solid #f3f3f3;
+        width: 20px;
+        height: 20px;
+        border-top: solid green 10px;
+        border-bottom: solid lightcoral 10px;
+        border-radius: 50%;
+        margin: auto;
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        right: 0px;
+        left: 0px;
+        
+        
+        -webkit-animation: spin 300ms linear infinite;
+        -o-animation: spin 300ms linear infinite;
+        animation:spin 300ms linear infinite;
+    
+    }
+    @keyframes spin{
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+    .fondu-out{
+        
+        opacity:0;
+        -webkit-transition: opacity 1s ease-in-out;
+        -moz-transition: opacity 1s ease-in-out;
+        -o-transition: opacity 1s ease-in-out;
+        transition: opacity 1s ease-in-out;
+    }
+
 }
+
+
+
+
 // @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 // @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap');
 // header{
@@ -12,33 +54,7 @@ body{
 //     height: 350px;
 // }
 
-.chargeur{
-    border: 10px solid #f3f3f3;
-    width: 100px;
-    height: 100px;
-    border-top: solid green 10px;
-    border-bottom: solid lightcoral 10px;
-    border-radius: 50%;
-    margin: auto;
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    right: 0px;
-    left: 0px;
-    -webkit-animation: spin 300s linear infinite;
-    -o-animation: spin 300s linear infinite;
-    animation:spin 300s linear infinite;
 
-}
-@keyframes spin{
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(360deg);
-    }
-
-}
 .enseigne{
 //   border: green solid 1px;
   height: 50px;
@@ -210,6 +226,12 @@ header p{
     bottom: 14px;
     font-weight: bolder;
 }
+
+
+
+
+
+
 #part02{
     padding-left: 15px;
     padding-right: 15px;
@@ -224,6 +246,8 @@ header p{
     font-weight: bolder;
     margin-bottom: 20px;
 }
+
+
 #palette, #francaise, #delice, #enchante{
     height: 220px;
     margin-bottom: 30px;
@@ -427,22 +451,23 @@ footer div{
         width: 40%;
         margin-top: 20px;
         margin-bottom: 25px;
-        margin-left: 32%;
+        margin-left: 30%;
         border: solid blue 1px;
         
     }
 .retour{
     border: solid red 1px;
-    height: 10px;
-    width: 29px;
+    height: 20px;
+    width: 40px;
     position: absolute;
-    left:10px;
+    left:30px;
     top:26px;
+    text-decoration: none;
    
 }
-.retour i{
+.fleche{
     color:black;
-    font-size: 10px;
+    font-size: 22px;
     font-weight: bold;
 }
 .fa-solid{
@@ -480,17 +505,9 @@ footer div{
     border: blue solid 2px;
     height: 60px;
 }
-.rp01{
-    background-color: #f7f7f7;
-    border-radius: 10px;
-    // border-bottom-left-radius: 10px;
-    // border-top-left-radius: 10px;
-    // border-top-right-radius: 10px;
-    // border-bottom-right-radius: 10px;
-    margin-top: 10px;
-    font-family: 'roboto', Arial, Helvetica, sans-serif;
-    position: relative;
-}
+
+//=======================================
+
 #paletteDG{
     font-family:'Shrikhand', cursive;
 }
@@ -503,111 +520,82 @@ footer div{
     width: 11%;
     margin-top: 1px;
 }
-// .repasNomA{
-//     width: 100%;
-//    font-weight: bold; 
-//    border: solid blue 1px;
-// }
-// .repasNomB{
-//     font-size:small;
-//     border: solid cyan 1px;
-//     width: 85%;
-// }
-// .repasPrix{
-//     font-size: small;
-//     border:solid green 1px;
-//     width: 15%;
-// }
-// .repaschoix{
-//     width: 15%;
-//     border: solid darkmagenta 1px;
-//     position: absolute;
-//     right: 0px;
-//     top: 0px;
-//     height: 100%;
-//     border-top-right-radius:10px;
-//     border-bottom-right-radius: 10px;
-//     background-color: #99E2D0;
-//     visibility: hidden;
-// }
-// .rp02{
-//     display: flex;
-//     width: 100%;
-// }
+//===================Boite Menu=======================
 .rp01{
     background-color: #f7f7f7;
     border-radius: 10px;
     margin-top: 10px;
     font-family: 'roboto', Arial, Helvetica, sans-serif;
+    display: flex;
     position: relative;
+    z-index: 1000;
+    cursor: pointer;
+    transition: margin-right 300ms, transform 300ms;
 
-    & .nomPrix{
-        width: 100%;
-        border: solid hotpink 1px;
-        & .repasNomA{
-            width: 100%;
-        font-weight: bold; 
-        border: solid rgb(255, 0, 0) 1px;
-        }
-        & .rp02{
-            display: flex;
-            width: 100%;
-            & .repasNomB{
-                font-size:small;
-                border: solid cyan 1px;
-                width: 85%;
-            }
-            & .repasPrix{
-                font-size: small;
-                border:solid green 1px;
-                width: 15%;
-            }
-
-        }
+    &:hover >.nomETprix{
+        margin-right:58px;
     }
-}    
-.repaschoix{
-        // width: 15%;
-        // border: solid rgb(128, 206, 3, 0) 3px;
-        // position: absolute;
-        // right: 0px;
-        // top: 0px;
-        // height: 100%;
-        // border-top-right-radius:10px;
-        // border-bottom-right-radius: 10px;
-        // background-color: #99E2D0;
-             display: none;
-   
-        & i{
+    &:hover >.choix{
+       transform:scaleX(1.15);
+    }
+}
+//-------------------nom et prix----------------------
+.nomETprix{
+        width: 100%;
+        margin-right: 0px;
+        border: solid hotpink 1px;
+
+
+}
+.repasNomA{
+        font-weight: bold;
+        background-color: white; 
+        border: solid rgb(255, 0, 0) 1px;
+        text-overflow: ellipsis;
+        }
+.repasNomB{
+        display: flex;
+        background-color: white;
+        text-overflow: ellipsis;
+}            
+.composition{
+            font-size:small;
+            border: solid cyan 5px;
+            width: 85%;
+            height: 20px;
+            }
+.prix{
+            font-size: small;
+            border:solid green 2px;
+            width: 15%;
+            height: 20px;
+            }
+
+
+//----------------symbole de choix -----------------            
+.choix{
+        width: 0%;
+        border: solid rgb(128, 206, 3, 0) 3px;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        height: 40px;
+        border-top-right-radius:10px;
+        border-bottom-right-radius: 10px;
+        background-color: #99E2D0;
+    
+}
+.choix i{
             font-size: 20px;
             background-color: #99E2D0;
             color: #f7f7f7;
             position: absolute;
             left: 15px;
             top: 10px;
-        }
-} 
-.nomPrix:active{
-        background-color: tomato ;
-        .repasNomA{
-            width: 84%;
-              }
-        .rp02{
-            width: 85%;
-        }
-        .repaschoix{
-            width: 15%;
-            border: solid rgb(128, 206, 3, 0) 3px;
-            position: absolute;
-            right: 0px;
-            top: 0px;
-            height: 100%;
-            border-top-right-radius:10px;
-            border-bottom-right-radius: 10px;
-            background-color: #99E2D0;
-     
-        }
-    }
+}  
+
+//=================================================
+
 .pal01{
     margin-bottom: 0px;
 }
@@ -615,7 +603,8 @@ footer div{
     margin-top: -64px;
     padding-bottom: 40px;
 }
-.AdrEmail{
+.AdrEmail, #propo, #parte, #mention{
     color: white;
     text-decoration: none;
 }
+

@@ -4,40 +4,6 @@ body {
   position: relative;
 }
 
-.chargeur {
-  border: 10px solid #f3f3f3;
-  width: 100px;
-  height: 100px;
-  border-top: solid green 10px;
-  border-bottom: solid lightcoral 10px;
-  border-radius: 50%;
-  margin: auto;
-  position: absolute;
-  top: 0px;
-  bottom: 0px;
-  right: 0px;
-  left: 0px;
-  -webkit-animation: spin 300s linear infinite;
-  animation: spin 300s linear infinite;
-}
-
-@-webkit-keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 .enseigne {
   height: 50px;
 }
@@ -420,22 +386,22 @@ footer div {
   width: 40%;
   margin-top: 20px;
   margin-bottom: 25px;
-  margin-left: 32%;
+  margin-left: 30%;
   border: solid blue 1px;
 }
 
 .retour {
   border: solid red 1px;
-  height: 10px;
-  width: 29px;
+  height: 20px;
+  width: 40px;
   position: absolute;
-  left: 10px;
+  left: 30px;
   top: 26px;
 }
 
-.retour i {
+.fleche {
   color: black;
-  font-size: 10px;
+  font-size: 22px;
   font-weight: bold;
 }
 
@@ -479,14 +445,6 @@ footer div {
   height: 60px;
 }
 
-.rp01 {
-  background-color: #f7f7f7;
-  border-radius: 10px;
-  margin-top: 10px;
-  font-family: "roboto", Arial, Helvetica, sans-serif;
-  position: relative;
-}
-
 #paletteDG {
   font-family: "Shrikhand", cursive;
 }
@@ -507,63 +465,66 @@ footer div {
   border-radius: 10px;
   margin-top: 10px;
   font-family: "roboto", Arial, Helvetica, sans-serif;
+  display: flex;
   position: relative;
 }
-.rp01 .nomPrix {
-  width: 100%;
-  border: solid hotpink 1px;
+
+#explo:hover {
+  border: solid 4px #9356DC;
+  z-index: 1000;
 }
-.rp01 .nomPrix .repasNomA {
+
+.nomETprix {
   width: 100%;
+  margin-right: 0px;
+  border: solid hotpink 1px;
+  z-index: 2;
+}
+
+.repasNomA {
   font-weight: bold;
+  background-color: white;
   border: solid red 1px;
 }
-.rp01 .nomPrix .rp02 {
+
+.repasNomB {
   display: flex;
-  width: 100%;
+  background-color: white;
 }
-.rp01 .nomPrix .rp02 .repasNomB {
+
+.composition {
   font-size: small;
   border: solid cyan 1px;
   width: 85%;
+  height: 20px;
 }
-.rp01 .nomPrix .rp02 .repasPrix {
+
+.prix {
   font-size: small;
   border: solid green 1px;
   width: 15%;
+  height: 20px;
 }
 
-.repaschoix {
-  display: none;
+.choix {
+  width: 15%;
+  border: solid rgba(128, 206, 3, 0) 3px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  height: 40px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #99E2D0;
 }
-.repaschoix i {
+
+.choix i {
   font-size: 20px;
   background-color: #99E2D0;
   color: #f7f7f7;
   position: absolute;
   left: 15px;
   top: 10px;
-}
-
-.nomPrix:active {
-  background-color: tomato;
-}
-.nomPrix:active .repasNomA {
-  width: 84%;
-}
-.nomPrix:active .rp02 {
-  width: 85%;
-}
-.nomPrix:active .repaschoix {
-  width: 15%;
-  border: solid rgba(128, 206, 3, 0) 3px;
-  position: absolute;
-  right: 0px;
-  top: 0px;
-  height: 100%;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  background-color: #99E2D0;
 }
 
 .pal01 {
@@ -578,4 +539,21 @@ footer div {
 .AdrEmail {
   color: white;
   text-decoration: none;
+}
+
+#essaieHover {
+  height: 20px;
+  width: 30%;
+  background: #9356DC;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: solid 2px red;
+}
+
+#essaieHover:hover {
+  background: red;
+}
+
+.explorer:hover {
+  border: red 2px solid;
 }/*# sourceMappingURL=ohmyf.css.map */
