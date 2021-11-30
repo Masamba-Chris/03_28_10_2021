@@ -3,6 +3,42 @@ body {
   border: #FF79DA solid 1px;
   position: relative;
 }
+body.chargeur {
+  border: 10px solid #f3f3f3;
+  width: 20px;
+  height: 20px;
+  border-top: solid green 10px;
+  border-bottom: solid lightcoral 10px;
+  border-radius: 50%;
+  margin: auto;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  -webkit-animation: spin 300ms linear infinite;
+  animation: spin 300ms linear infinite;
+}
+@-webkit-keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+body .fondu-out {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
 
 .enseigne {
   height: 50px;
@@ -397,6 +433,7 @@ footer div {
   position: absolute;
   left: 30px;
   top: 26px;
+  text-decoration: none;
 }
 
 .fleche {
@@ -460,54 +497,57 @@ footer div {
   margin-top: 1px;
 }
 
-.rp01 {
+.ent01 {
   background-color: #f7f7f7;
-  border-radius: 10px;
-  margin-top: 10px;
+  border-radius: 10px solid red;
+  margin-top: 50px;
   font-family: "roboto", Arial, Helvetica, sans-serif;
   display: flex;
   position: relative;
+  margin-left: 10px;
+  width: 88%;
+  cursor: pointer;
+  transition: margin-right 300ms, transform 300ms;
 }
 
-#explo:hover {
-  border: solid 4px #9356DC;
-  z-index: 1000;
+.ent01:hover {
+  margin-right: 58px;
+  transform: translateX(-70px);
+  margin-left: 0px;
 }
 
-.nomETprix {
-  width: 100%;
+.NomPrix {
+  border: solid 3px green;
   margin-right: 0px;
-  border: solid hotpink 1px;
-  z-index: 2;
-}
-
-.repasNomA {
-  font-weight: bold;
-  background-color: white;
-  border: solid red 1px;
-}
-
-.repasNomB {
   display: flex;
-  background-color: white;
+  justify-content: space-between;
+  width: 100%;
 }
 
-.composition {
-  font-size: small;
-  border: solid cyan 1px;
-  width: 85%;
-  height: 20px;
+.Nom {
+  margin-right: 0px;
+  border: solid hotpink 3px;
+  height: 39px;
+  width: 84%;
+}
+
+.grand {
+  font-weight: bold;
+}
+
+.petit {
+  font-size: smaller;
 }
 
 .prix {
   font-size: small;
-  border: solid green 1px;
+  border: solid green 2px;
   width: 15%;
-  height: 20px;
+  height: 39px;
 }
 
 .choix {
-  width: 15%;
+  width: 14%;
   border: solid rgba(128, 206, 3, 0) 3px;
   position: absolute;
   right: 0px;
@@ -516,6 +556,8 @@ footer div {
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   background-color: #99E2D0;
+  margin-right: -55px;
+  overflow-x: hidden;
 }
 
 .choix i {
@@ -536,24 +578,7 @@ footer div {
   padding-bottom: 40px;
 }
 
-.AdrEmail {
+.AdrEmail, #propo, #parte, #mention {
   color: white;
   text-decoration: none;
-}
-
-#essaieHover {
-  height: 20px;
-  width: 30%;
-  background: #9356DC;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border: solid 2px red;
-}
-
-#essaieHover:hover {
-  background: red;
-}
-
-.explorer:hover {
-  border: red 2px solid;
 }/*# sourceMappingURL=ohmyf.css.map */
